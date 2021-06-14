@@ -11,10 +11,10 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-//class MainAdapter(
-//    private val arrayList: ArrayList<Element>,
-//    private val onClick:(Element) -> Unit
-//) :
-//    RecyclerView.Adapter<MainAdapter.ViewHolder>() {
-//
-//}
+class MainAdapter(
+    private val arrayList: ArrayList<Element>,
+    private val onClick:(Element) -> Unit
+) :
+    RecyclerView.Adapter<MainAdapter.ViewHolder>() {
+
+}
