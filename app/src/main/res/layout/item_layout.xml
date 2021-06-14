@@ -7,10 +7,7 @@
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:textSize="20sp"
+        style="@style/edit_text"
         android:hint="@string/enter_the_title"
         app:layout_constraintEnd_toStartOf="@id/delete_btn"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,8 +15,7 @@
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/delete_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        style="@style/btns_in_view_holder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/title"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,8 +23,7 @@
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/minus_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        style="@style/btns_in_view_holder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/current_number"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,10 +32,8 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/current_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/text_count"
         android:text="@string/_0"
-        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintStart_toEndOf="@id/minus_btn"
@@ -48,8 +41,7 @@
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/plus_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        style="@style/btns_in_view_holder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/current_number"
