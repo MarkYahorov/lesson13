@@ -42,12 +42,12 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
     }
 
-    private fun takeAllElementsFromFile(){
+    private fun takeAllElementsFromFile() {
         filesDir.listFiles().forEach { file ->
-            if (file.name == "data"){
+            if (file.name == "data") {
                 val inputStream = openFileInput(file.name)
                 val objInputStream = ObjectInputStream(inputStream)
-                while (objInputStream.available()>0) {
+                while (objInputStream.available() > 0) {
                     val title = objInputStream.readUTF()
                     val count = objInputStream.readInt()
                     arrayList.add(Element(title, count))
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         with(recyclerView) {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = MainAdapter(arrayList,
-                onClick = {showAlert(it)})
+                onClick = { showAlert(it) })
         }
     }
 
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         setRecycler()
     }
 
-    private fun saveInFile(){
+    private fun saveInFile() {
         if (arrayList.isNotEmpty()) {
             try {
                 val fileOutput = openFileOutput("data", MODE_PRIVATE)
@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showAlert(element: Element){
+    private fun showAlert(element: Element) {
         val builder = AlertDialog.Builder(this@MainActivity)
         builder.setPositiveButton("Yes") { _, _ ->
             arrayList.remove(element)

@@ -1,6 +1,5 @@
 package com.example.lesson13
 
-import android.app.AlertDialog
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
@@ -13,17 +12,17 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainAdapter(
     private val arrayList: ArrayList<Element>,
-    private val onClick:(Element) -> Unit
+    private val onClick: (Element) -> Unit
 ) :
     RecyclerView.Adapter<MainAdapter.ViewHolder>() {
     class ViewHolder(item: View) : RecyclerView.ViewHolder(item) {
-        val title = item.findViewById<EditText>(R.id.title)!!
-        val deleteBtn = item.findViewById<ImageButton>(R.id.delete_btn)!!
+        private val title = item.findViewById<EditText>(R.id.title)!!
+        private val deleteBtn = item.findViewById<ImageButton>(R.id.delete_btn)!!
         private val plusBtn = item.findViewById<ImageButton>(R.id.plus_btn)!!
         private val currentNumber = item.findViewById<TextView>(R.id.current_number)!!
         private val minusBtn = item.findViewById<ImageButton>(R.id.minus_btn)!!
 
-        fun bind(element: Element , onClick: (Element) -> Unit) {
+        fun bind(element: Element, onClick: (Element) -> Unit) {
             title.setText(element.title)
             currentNumber.text = element.currentCount.toString()
             plusBtn.setOnClickListener {

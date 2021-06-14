@@ -11,6 +11,7 @@ data class Element(
     var title: String,
     var currentCount: Int
 ) : Parcelable, Externalizable {
+
     override fun writeExternal(out: ObjectOutput?) {
         out?.writeUTF(title)
         out?.writeInt(currentCount)
