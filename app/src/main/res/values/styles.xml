@@ -6,8 +6,8 @@
     </style>
 
     <style name="text_count">
-        <item name="android:layout_height">@dimen/height_text_in_view_holder_item</item>
-        <item name="android:layout_width">@dimen/width_text_count_in_view_holder_item</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:textSize">@dimen/text_count_in_view_holder_item</item>
     </style>
 
@@ -15,12 +15,12 @@
         <item name="android:layout_width">@dimen/edit_text_layout_width</item>
         <item name="android:layout_marginTop">@dimen/edit_text_marginTop</item>
         <item name="android:textSize">@dimen/edit_text_size</item>
-        <item name="android:layout_height">@dimen/height_text_in_view_holder_item</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="toolbar">
-        <item name="android:layout_width">@dimen/main_toolbar_width</item>
-        <item name="android:layout_height">@dimen/main_toolbar_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="recycler">

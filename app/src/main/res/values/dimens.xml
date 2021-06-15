@@ -3,13 +3,9 @@
     <dimen name="width_buttons_in_view_holder_item">60dp</dimen>
     <dimen name="height_buttons_in_view_holder_item">60dp</dimen>
     <dimen name="text_count_in_view_holder_item">25sp</dimen>
-    <dimen name="width_text_count_in_view_holder_item">wrap_content</dimen>
-    <dimen name="height_text_in_view_holder_item">wrap_content</dimen>
     <dimen name="edit_text_layout_width">0dp</dimen>
     <dimen name="edit_text_marginTop">12dp</dimen>
     <dimen name="edit_text_size">20sp</dimen>
-    <dimen name="main_toolbar_width">match_parent</dimen>
-    <dimen name="main_toolbar_height">wrap_content</dimen>
     <dimen name="recycler_width">0dp</dimen>
     <dimen name="recycler_height">0dp</dimen>
 </resources>

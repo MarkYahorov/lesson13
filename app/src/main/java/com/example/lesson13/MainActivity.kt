@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         with(recyclerView) {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = MainAdapter(arrayList,
-                onClick = { showAlert(it) })
+                onClick = {showAlert(it)})
         }
     }
 
@@ -103,6 +103,7 @@ class MainActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this@MainActivity)
         builder.setPositiveButton("Yes") { _, _ ->
             arrayList.remove(element)
+            recyclerView.adapter?.notifyDataSetChanged()
         }
         builder.setNegativeButton("No") { _, _ -> }
         builder.setTitle("Delete everything?")
