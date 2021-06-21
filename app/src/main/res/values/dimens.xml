@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_buttons_in_view_holder_item">60dp</dimen>
+    <dimen name="height_buttons_in_view_holder_item">60dp</dimen>
+    <dimen name="text_count_in_view_holder_item">25sp</dimen>
+    <dimen name="edit_text_layout_width">0dp</dimen>
+    <dimen name="edit_text_marginTop">12dp</dimen>
+    <dimen name="edit_text_size">20sp</dimen>
+    <dimen name="recycler_width">0dp</dimen>
+    <dimen name="recycler_height">0dp</dimen>
+</resources>
